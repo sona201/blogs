@@ -1,0 +1,4 @@
+[submodule "themes/hugo-theme-stack"]
+	path = themes/hugo-theme-stack
+	url = https://github.com/sona201/hugo-theme-stack
+	branch = self
