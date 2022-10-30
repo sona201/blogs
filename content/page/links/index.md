@@ -9,6 +9,10 @@ links:
     description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
     website: https://www.typescriptlang.org
     image: ts-logo-128.jpg
+  - title: 龙族
+    description: 卡塞尔学院的时光是最刻苦铭心的
+    website: https://www.typescriptlang.org
+    image: ts-logo-128.jpg
 menu:
     main: 
         weight: -50
@@ -30,6 +34,10 @@ links:
     image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
   - title: TypeScript
     description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
+    website: https://www.typescriptlang.org
+    image: ts-logo-128.jpg
+  - title: 龙族
+    description: 卡塞尔学院的时光是最刻苦铭心的
     website: https://www.typescriptlang.org
     image: ts-logo-128.jpg
 ```
