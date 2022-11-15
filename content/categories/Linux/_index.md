@@ -1,7 +1,7 @@
 ---
 title: "Test"
-description: "This is an example category"
-slug: "test"
+description: "This is an category for linux"
+slug: "linux"
 image: "hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg"
 style:
     background: "#2a9d8f"

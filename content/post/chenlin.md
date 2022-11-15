@@ -5,8 +5,7 @@ tags: [ ".vimrc", "plugins", "spf13-vim", "vim" ]
 lastmod: 2015-12-23
 date: "2012-04-06"
 categories:
-  - "Development"
-  - "VIM"
+  - "计划"
 slug: "chenlin"
 ---
 

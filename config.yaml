@@ -142,7 +142,6 @@ params:
             id:
     widgets:
         homepage:
-            - type: aaa
             - type: search
             - type: archives
               params:
