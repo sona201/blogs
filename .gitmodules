@@ -4,3 +4,6 @@
 	branch = self
 [submodule "JSONedit"]
 	branch = main
+[submodule "themes/themes/hugo-theme-stack"]
+	path = themes/themes/hugo-theme-stack
+	url = https://github.com/sona201/hugo-theme-stack
