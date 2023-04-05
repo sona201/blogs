@@ -1,0 +1,73 @@
+name: deploy hugo
+
+#on:
+#  push:
+#  workflow_dispatch:
+#
+#jobs:
+#  build:
+#    runs-on: ubuntu-22.04
+#    steps:
+#      - name: Checkout
+#        uses: actions/checkout@v3
+#        with:
+#          submodules: true
+#          fetch-depth: 0
+#
+#      - name: Setup Hugo
+#        uses: peaceiris/actions-hugo@v2
+#        with:
+#          hugo-version: "latest"
+#
+#      - name: Build Web
+#        run: hugo
+#
+#      - name: Deploy Web
+#        uses: peaceiris/actions-gh-pages@v3
+#        with:
+#          PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+#          EXTERNAL_REPOSITORY: sona201/sona201.github.io
+#          PUBLISH_BRANCH: master
+#          PUBLISH_DIR: ./public
+#          commit_message: ${{ github.event.head_commit.message }}
+
+on: push
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v2
+
+      - name: Setup hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.64.0"
+
+      - name: Build
+        # remove --minify tag if you do not need it
+        # docs: https://gohugo.io/hugo-pipes/minification/
+        run: hugo --minify
+
+#      - name: Deploy
+#        uses: peaceiris/actions-gh-pages@v3
+#        with:
+#          personal_token: ${{ secrets.TOKEN }}
+#          external_repository: <username>/<username>.github.io
+#          publish_dir: ./public
+#          #   keep_files: true
+#          user_name: <username>
+#          user_email: <username@email.com>
+#          publish_branch: master
+#        #   cname: example.com
+
+      - name: Deploy Web 
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+          EXTERNAL_REPOSITORY: sona201/sona201.github.io
+          PUBLISH_DIR: ./public
+          user_name: clin
+          user_email: sona201@163.com
+          PUBLISH_BRANCH: master
+          commit_message: ${{ github.event.head_commit.message }}
