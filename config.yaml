@@ -37,7 +37,7 @@ hasCJKLanguage: true
 # 定义文章访问路径，详细见下文"URL管理" See "content-management/urls/"
 # 除了预设的参数外，你也可以通过下面的方式自定义自己的参数。你可以在模板中获取到自定义的参数，通常情况下你使用的主题都会要求你这么做，具体信息可以阅读相关主题的文档。
 permalinks:
-    post: /p/:slug/
+    post: /posts/:slug/
     page: /:slug/
 
 # 自定义参数
