@@ -1,12 +1,12 @@
 ---
-title: "chenlin"
+title: "成果"
 description: "for test"
 tags: [ ".vimrc", "plugins", "spf13-vim", "vim" ]
 lastmod: 2015-12-23
 date: "2012-04-06"
 categories:
   - "计划"
-slug: "chenlin"
+slug: "chenlinxxx"
 ---
 
 ## Q2 成果
