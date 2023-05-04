@@ -1,6 +1,8 @@
 ---
 title: "Wireshark技巧"
 image: 
+categories: ["tcp"]
+tags: ["tcp", "wireshark", "技巧"]
 style:
     background: "#2a9d8f"
     color: "#fff"
