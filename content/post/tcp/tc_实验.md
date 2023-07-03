@@ -1,6 +1,8 @@
 ---
 title: "Tc_实验"
-date: 2023-05-19T01:05:14+08:00
+description: "tcp的tc实验记录"
+date: "2023-05-19T01:05:14+08:00"
+lastmod: "2023-07-03T13:05:14+08:00"
 categories: ["tcp"]
 tags: ["wmem", "tc", "实验"]
 image: 
