@@ -12,7 +12,7 @@ style:
 ---
 
 ## 排查python server当时的系统信息
-![tc_promiscuous](/image/tc_promiscuous.png)
+![tc_promiscuous](/images/tc_promiscuous.png)
 
 发现并没有异常，仅记录`device eth0 entered promiscuous mode`表示当时网卡 eth0 进入混杂模式,应该与当时启用tcpdump有关。
 
@@ -28,7 +28,7 @@ style:
 100 1880M  100 1880M    0     0   396M      0  0:00:04  0:00:04 --:--:--  396M
 ```
 
-![server_net_mem](/image/server_net_mem.png)
+![server_net_mem](/images/server_net_mem.png)
 
 一切正常
 
