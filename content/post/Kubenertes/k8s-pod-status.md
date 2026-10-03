@@ -27,7 +27,7 @@ https://github.com/kubernetes/kubernetes/blob/022d50fe3a1bdf2386395da7c266fede0c
 
 ## 诊断流程
 
-![pod_troubleshooting_process](./pod_troubleshooting_process.png)
+![pod_troubleshooting_process](/images/k8s-pod-troubleshooting-process.png)
 
 1. 查看Pod是否处于异常状态，具体操作，请参见检查Pod的状态。
   * a. 如果Pod状态异常，可通过查看Pod的事件、Pod的日志、Pod的配置等信息确定异常原因。具体操作，请参见常见排查方法。关于Pod异常
