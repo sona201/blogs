@@ -251,4 +251,4 @@ nmap 通过 sU 参数使用 udp 进行端口发现，原理是根据是否有返
 nmap 在二层做主机发现时使用的参数是 sn（ping 扫描，不做端口扫描）。在三层做主机发现时也是使用的 sn 参数，这里二三层都用的 sn 参数，而具体使用的是二层协议 arp 还是三层协议 icmp，判断依据是是否属于同一个网段。在四层发现时主要利用的是 tcp 和 udp，而 nmap 用到的主要参数就是 PU 和 PA。
 
 nmap 使用 udp 来做端口扫描时，用到的参数是 sU，来看下 man 手册的介绍：
-![nmap man](./nmap_man.png)
+![nmap man](/images/nmap-man.png)
