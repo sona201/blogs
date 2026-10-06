@@ -11,7 +11,9 @@ style:
     color: "#fff"
 ---
 
-[相关文章](https://developer.aliyun.com/article/100476)
+[相关文章](https://developer.aliyun.com/article/100476) \
+[wireshark 常用功能笔记](https://www.ilikejobs.com/posts/wireshark/) \
+[用 Wireshark 分析 TCP 吞吐瓶颈](https://www.kawabangga.com/posts/4794)
 
 wireshark你一定会喜欢的技巧摘要
 
@@ -27,6 +29,15 @@ wireshark https 抓包 tls contains "baidu.com"
 
 
 > wireshark 没有权限
+
+```text
+You do not have permission to capture on device "utun7".
+((cannot open BPF device) /dev/bpf0: Permission denied)
+
+Please check to make sure you have sufficient permissions.
+
+If you installed Wireshark using the package from wireshark.org, close this dialog and click on the "installing ChmodBPF" link in "You can fix this by installing ChmodBPF." on the main screen, and then complete the installation procedure.
+```
 ![permission_denied](/images/permission_denied.png)
 
 或者下图
@@ -207,7 +218,7 @@ Version 4.0.5版本的样式
 
 1．如果已知某个协议发生问题，可以用协议名称过滤一下。以Windows Domain的身份验证问题为例，如果已知该域的验证协议是Kerberos，那么就在Filter框输入Kerberos作为关键字过滤。除了纯粹的Kerberos包，你还将得到Session Setup之类包含Kerberos的包。
 
-![wireshark_filter_Kerberos](/images/wireshark_filter_Kerberos.jpeg)
+![wireshark_filter_Kerberos](/images/wireshark_filter_kerberos.jpeg)
 
 用协议过滤时务必考虑到协议间的依赖性。比如NFS共享挂载失败，问题可能发生在挂载时所用的mount协议，也可能发生在mount之前的portmap协议。这种情况下就需要用"portmap || mount"来过滤了。如果不懂协议间的依赖关系怎么办？我也没有好办法，只能暂时放弃这个技巧，等熟悉了该协议后再用。
 
@@ -308,4 +319,3 @@ Version 4.0.5版本没有找到 Statistics-->Summary 选项，但找到 Statisti
 ![wireshark_filter_search_error](/images/wireshark_filter_search_error.jpeg)
 
 一篇文章不可能涵盖所有技巧，本文就到此为止。最后要分享的，是我认为最“笨”但也是最重要的一个技巧——勤加练习。只要练到这些技巧都变成习惯，就可以算登堂入室了。
-
